@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .left-pane {
+    width: 70%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-right: 1px solid #ddd;
+  }
+  
+  .right-pane {
+    width: 30%;
+    padding: 20px;
+    position: relative;
+    background-color: #fff;
+  }
+  
+  .question {
+    margin-bottom: 20px;
+  }
+  
+  .options {
+    margin-bottom: 20px;
+  }
+  
+  .option-label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .right-pane .timer {
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .question-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .question-circle {
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+    cursor: pointer;
+  }
+  
+  .question-circle.current {
+    background-color: blue;
+    color: white;
+  }
+  
+  .question-circle.answered {
+    background-color: green;
+    color: white;
+  }
+  
+  .question-circle.review {
+    background-color: orange;
+    color: white;
+  }
+  
+  .submit-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    padding: 15px;
+    background-color: #28a745;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+  
+  .submit-btn:hover {
+    background-color: #218838;
+  }
+  
+  .camera-container {
+    position: absolute; /* Absolute positioning within the right-pane */
+    top: 10px; /* Adjust top spacing */
+    right: 50px; /* Adjust right spacing */
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+     /* Hide overflow */
+    z-index: 1000; /* Ensure it's above other content */
+  }
